@@ -8,6 +8,8 @@ jobs:
     steps:
     - name: start minikube
       id: minikube
+      with:
+        driver: none
       uses: spowelljr/setup-minikube@master
     # now you can run kubectl to see the pods in the cluster
     - name: kubectl
